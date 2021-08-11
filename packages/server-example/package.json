@@ -1,0 +1,26 @@
+{
+  "name": "server-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "keywords": [],
+  "author": "Qingrong Ke <keqingrong@outlook.com> (https://keqingrong.github.io/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keqingrong/fingerprint.git",
+    "directory": "packages/server-example"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.0",
+    "address": "^1.1.2",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-logger": "^3.2.1"
+  }
+}

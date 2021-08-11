@@ -1,0 +1,77 @@
+{
+  "name": "@keqingrong/fingerprint",
+  "version": "0.1.0",
+  "author": "Qingrong Ke <keqingrong@outlook.com> (https://keqingrong.github.io/)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/fingerprint.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint src test types",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keqingrong/fingerprint.git",
+    "directory": "packages/fingerprint"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@fingerprintjs/fingerprintjs": "^3.3.0",
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "babel-jest": "^26.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^4.3.6",
+    "prettier": "^2.3.2",
+    "size-limit": "^4.9.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "babel-jest": "^26.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/fingerprint.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/fingerprint.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
