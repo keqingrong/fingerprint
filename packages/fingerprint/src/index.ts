@@ -1,14 +1,15 @@
 // import { load, hashComponents, isAndroid } from '@fingerprintjs/fingerprintjs'
 import { load, hashComponents, isAndroid } from './fingerprintjs'
 import { getGpuInfo, getGpuFingerprint } from './sources/gpu'
-import { getIP, getIPFingerprint } from './sources/ip'
+import { getPublicIP, getRobustPublicIP, getIPFingerprint } from './sources/ip'
 import { getOSVersion, getOSVersionFingerprint } from './sources/os_version'
 
 export {
   isAndroid,
   getGpuInfo,
   getGpuFingerprint,
-  getIP,
+  getPublicIP,
+  getRobustPublicIP,
   getIPFingerprint,
   getOSVersion,
   getOSVersionFingerprint,
