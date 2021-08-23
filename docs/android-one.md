@@ -56,6 +56,15 @@ Mozilla/5.0 (Linux; U; Android 10; zh-cn; Redmi 8 Build/QKQ1.191014.001) AppleWe
 
 Mozilla/5.0 (Android 10; Mobile; rv:90.0) Gecko/90.0 Firefox/90.0 (UA)
 
+## 欧朋浏览器（Opera）
+
+- 07179a945e0d60411eb865cca0a6a27d (visitorId)
+- 718a119dc71ef0369fbeeb134eab05fb (canvasHash)
+- 21f279e1e8280d1ed04c3a6c690ade06 (canvasHashStable)
+- 1963372d85596dbeee34ec771a14461d (audioHash)
+
+Mozilla/5.0 (Linux; U; Android 10; zh-CN; Redmi 8 Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/12.65.0.3 Mobile Safari/537.36 (UA)
+
 ## 华为浏览器
 
 - 1d2a8fc0cd08b2c1475bf02422ad8284 (visitorId)
@@ -123,15 +132,15 @@ Mozilla/5.0 (Linux;SNEBUY-APP;SNEBUY-APP 427;SNCLIENT-WAP; Android 10; Redmi 8 B
 
 同一台 Android 手机
 
-- canvasHash 9/13 概率相同，不同的是 Chrome、Edge、火狐和微信内置浏览器
-- canvasHashStable 9/13 概率相同，不同的是 Chrome、Edge、火狐和微信内置浏览器
-- audioHash 8/13 或 4/13 概率相同，其中猎豹浏览器、百度浏览器、手机 QQ 和苏宁易购内置浏览器相同，火狐独一无二
+- canvasHash 10/14 概率相同，不同的是 Chrome、Edge、火狐和微信内置浏览器
+- canvasHashStable 10/14 概率相同，不同的是 Chrome、Edge、火狐和微信内置浏览器
+- audioHash 8/14 或 5/14 概率相同，其中猎豹浏览器、百度浏览器、欧朋浏览器、手机 QQ 和苏宁易购内置浏览器相同，火狐独一无二
   - Chrome/77: Edge、QQ 浏览器、微信内置浏览器
   - Chrome/78: UC 浏览器、夸克浏览器
   - Chrome/79: 小米浏览器
   - Chrome/80: Chrome
   - Chrome/83: 华为浏览器
-  - Chrome/87: 猎豹浏览器、百度浏览器、手机 QQ 内置浏览器、苏宁易购内置浏览器，对应 Android System WebView 87.0.4280.101
+  - Chrome/87: 猎豹浏览器、百度浏览器、欧朋浏览器、手机 QQ 内置浏览器、苏宁易购内置浏览器，对应 Android System WebView 87.0.4280.101
 
 UA 中会包含 Android 版本号（`Android 10`）、手机型号（`Redmi 8`），不一定包含定制版系统版本号（`Build/QKQ1.191014.001`）。
 
